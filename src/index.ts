@@ -1,5 +1,5 @@
-import foodToWaterConverter from "./business _logic/FoodToWaterConverter";
-import foodItemsMap from "./business _logic/StaticFoodItems";
+import foodToWaterConverter from "./business_logic/foodToWaterConverter";
+import foodItemsMap from "./business_logic/staticFoodItems";
 
 const converter = foodToWaterConverter(foodItemsMap);
 
