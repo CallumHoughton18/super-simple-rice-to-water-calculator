@@ -28,6 +28,8 @@ const GetInputAndDispatchIfValid = (event: Event, callback: (number: number) => 
 }
 
 foodTypeSelect.addEventListener("change", (event) => {
+  foodAmountInput.value = null;
+  waterAmountInput.value = null;
   converter.currentFood = (event.target as HTMLSelectElement).value;
 });
 
@@ -39,6 +41,6 @@ foodAmountInput.addEventListener("input", (event) => {
 
 waterAmountInput.addEventListener("input", (event) => {
   GetInputAndDispatchIfValid(event, (waterAmount) => {
-    waterAmountInput.value = Math.ceil(converter.toFoodValue(waterAmount)).toString();
+    foodAmountInput.value = Math.ceil(converter.toFoodValue(waterAmount)).toString();
   });
 });

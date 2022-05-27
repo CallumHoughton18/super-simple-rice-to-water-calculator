@@ -9,11 +9,8 @@
     "serve": "serve -p 8080 -s ./dist",
     "deploy": "gh-pages -d ./dist -b gh-pages"
   },
-  "dependencies": {
-    "lodash": "^4.17.21"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@types/lodash": "^4.14.182",
     "css-loader": "^6.7.1",
     "gh-pages": "^4.0.0",
     "serve": "^13.0.2",
